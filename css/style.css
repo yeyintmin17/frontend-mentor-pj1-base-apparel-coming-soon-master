@@ -149,7 +149,7 @@ body{
     font-size: 15px;
     font-weight: bold;
 
-    display: inline-block;
+    display: block;
     padding: var(--padding);
     border-radius: 10px;
     /* margin-top: 1rem; */
@@ -222,20 +222,6 @@ footer a:hover{
 }
 
 @media (max-width: 576px){
-    /* start left container */
-
-    .left-container .body-con h1 span{
-        font-size: 2rem;
-    }
-
-    .left-container .body-con p{
-        font-size: 15px;
-    }
-
-    /* end left container */
-}
-
-@media (max-width: 375px){
     .container{
         background: none;
         grid-template-columns: 100%;
@@ -247,7 +233,7 @@ footer a:hover{
     .left-container .body-con{
         padding: 2rem 1rem;
     }
-    
+
     .left-container .img-con{
         display: block;
     }
@@ -260,10 +246,18 @@ footer a:hover{
         align-items: center;
     }
 
+    .left-container .body-con h1 span{
+        font-size: 2rem;
+    }
+
+    .left-container .body-con p{
+        font-size: 15px;
+    }
+
     .left-container .body-con form .input-message-group .message{
         text-align: left;
     }
-    
+
     /* end left container */
 
     /* start right container */
